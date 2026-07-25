@@ -8,18 +8,13 @@ def maxArea(heights: list[int]) -> int:
         distance = j - i
         min_bar = min(heights[i], heights[j])
         current_area = distance * min_bar
+        largest_area = max(largest_area, current_area)
 
         if heights[i] < heights[j]:
             i += 1
-            largest_area = max(largest_area, current_area)
             continue
-        if heights[i] > heights[j]:
+        else:
             j -= 1
-            largest_area = max(largest_area, current_area)
-            continue
-        i += 1
-        j -= 1
-        largest_area = max(largest_area, current_area)
 
     return largest_area
 
