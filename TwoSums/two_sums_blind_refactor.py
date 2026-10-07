@@ -1,3 +1,4 @@
+
 # TODO: Refactor example: Two Sum Hash Map Technique Explained | must be doable blind
 def two_sum(nums: list[int], target: int):
     num_index_map = {}
@@ -10,6 +11,6 @@ def two_sum(nums: list[int], target: int):
 
 
 if __name__ == '__main__':
-    nums = [3,5,8,4]
+    nums = [3, 5, 8, 4]
     target = 7
     print(two_sum(nums, target))
