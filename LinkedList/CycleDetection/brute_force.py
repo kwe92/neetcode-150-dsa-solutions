@@ -29,11 +29,7 @@ def hasCycle(head: ListNode | None) -> bool:
             return True
         val_state.add(curr)
         curr = curr.next
-
-    if not curr:
-        return False
-    else:
-        return True
+    return False
 
 
 if __name__ == '__main__':
