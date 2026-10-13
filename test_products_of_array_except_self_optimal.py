@@ -1,6 +1,6 @@
 import unittest
 
-from ProductsofArrayExceptSelf.products_of_array_except_self import productExceptSelf
+from ArraysAndHashing.ProductsofArrayExceptSelf.products_of_array_except_self import productExceptSelf
 
 
 class ProductExceptSelfTests(unittest.TestCase):
