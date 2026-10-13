@@ -1,13 +1,14 @@
 def findMin(nums: list[int]) -> int:
     l = 0
     r = len(nums) - 1
-    res = 0
+    res = nums[l]
 
     while l <= r:
         if nums[l] < nums[r]:
             res = min(res, nums[l])
             break
-        mid = (r+l) // 2
+
+        mid = (l + r) // 2
         res = min(res, nums[mid])
 
         if nums[mid] >= nums[l]:
